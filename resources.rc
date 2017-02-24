@@ -1,0 +1,22 @@
+#define MENU_NEW_GAME 1
+#define MENU_EXIT 2
+#define MENU_HELP 3
+#define MENU_ABOUT 4
+
+#define IDI_ICON 101
+
+IDI_ICON ICON "images/icon.ico"
+
+MinesweeperMenu MENU
+{
+  POPUP "&File"
+    {
+      MENUITEM "&new game",MENU_NEW_GAME
+      MENUITEM "e&xit",MENU_EXIT
+    }
+  POPUP "&Help"
+    {
+      MENUITEM "h&elp",MENU_HELP
+      MENUITEM "&about",MENU_ABOUT
+    }
+}
